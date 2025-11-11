@@ -54,7 +54,7 @@ public class AddAppointmentServlet extends HttpServlet {
             }
             session.setAttribute("selectedTime", choosedTime);
             request.setAttribute("selectedTime", choosedTime);
-            session.removeAttribute("times");
+//            session.removeAttribute("times");
 
             request.getRequestDispatcher("AppointmentInfoView.jsp").forward(request, response);
 
